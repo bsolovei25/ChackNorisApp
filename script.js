@@ -133,7 +133,7 @@ function giveRando(json) {
   else {
     document.querySelector('.joketext').innerHTML = json.value;
     if (json.categories[0] != undefined){
-      document.querySelector(".topicktext").innerHTML = json.categories[0];
+      document.querySelector(".topicktext").innerHTML = json.categories[0].toUpperCase();
     }
     if (json.categories[0] == undefined){
       document.querySelector(".topicktext").innerHTML = 'RANDOM';
